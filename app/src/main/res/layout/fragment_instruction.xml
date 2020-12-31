@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- I used LinearLayout because this is a simple screen and organized the views vertically in a single line seemed to be the better option. -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udacity.shoestore.InstructionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/instruction_text"
+            style="@style/WelcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction_text" />
+
+        <TextView
+            android:id="@+id/instruction_text_description"
+            style="@style/WelcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/instruction_description" />
+
+        <Button
+            android:layout_marginTop="@dimen/layout_margin"
+            android:id="@+id/shoe_list_button"
+            style="@style/ShoeListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_list_button" />
+
+    </LinearLayout>
+
+</layout>
